@@ -4,99 +4,714 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../MapStars/style/normalize.css">    
+    <link rel="stylesheet" href="../MapStars/style/style.css">
+    
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img class="header__logo" src="./assets/MapStars-logo.png" alt="Logotype"/>
-        <nav>
-            <ul class="header__navbar-item">
-                <li class="header__navbar-list"><a href="#" class="header__navbar-link">Technology</a></li>
-                <li class="header__navbar-list"><a href="#" class="header__navbar-link">Advantages</a></li>
-                <li class="header__navbar-list"><a href="#" class="header__navbar-link">How it works</a></li>
-                <li class="header__navbar-list"><a href="#" class="header__navbar-link">Packages</a></li>
-                <li class="header__navbar-list"><a href="#" class="header__navbar-link">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="header__get-block">
-            <div class="header__choice-lang">
-                <span class="header__choice-icon"></span>
-                <input type="$$$" class="header__choice-input">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="header__logo-link"><img class="header__logo" src="../MapStars/assets/MapStars-logo.png" alt="Logotype"/></a>
+                <div class="header__menu">
+                    <nav>
+                        <ul class="header__navbar-item">
+                            <li class="header__navbar-list"><a href="#tech" class="header__navbar-link">Technology</a></li>
+                            <li class="header__navbar-list"><a href="#advantage" class="header__navbar-link">Advantages</a></li>
+                            <li class="header__navbar-list"><a href="#how-work" class="header__navbar-link">How it works</a></li>
+                            <li class="header__navbar-list"><a href="#package" class="header__navbar-link">Packages</a></li>
+                            <li class="header__navbar-list"><a href="#get-touch" class="header__navbar-link">Contact</a></li>
+                        </ul>
+                    </nav>
+        
+                    <div class="header__get-block">
+                        <!-- <div class="header__choice-lang">
+                            <span class="header__choice-icon"></span>
+                            <input type="$$$" class="header__choice-input">
+                        </div> -->
+        
+                        <button data-modal="2" class="btn get-btn header__get-btn">Get started</button>
+                    </div>
+                    <button class="header__burger get-btn" data-modal="1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+               
             </div>
-
-            <a href="#" class="btn header__get-btn">Get started</a>
-        </div>
+        </div>        
     </header>
+
     <main>
         <section class="section section__hero">
-            <div class="hero__content">
-                <h1 class="hero__title">MapStars Technology</h1>
-                <p class="hero__discription">Get new customers regularly with the help of modern technologies</p>
-                
-                <a href="#" class="btn hero__get-btn">
-                    Get started
-                    <span class="hero__btn-vector"></span>
+            <div class="container">
+                <div class="hero__content">
+                    <div>
+                        <h1 class="hero__title">MapStars<br> Technology</h1>
+                        <p class="hero__discription">Get new customers regularly with the help of modern technologies</p>
+
+                        <button data-modal="2" class="btn get-btn hero__get-btn">
+                            Get started
+                            <span class="hero__btn-vector">
+                    <img src="../MapStars/assets/Vector-white.png" />
+
+                            </span>
+                        </button>
+
+                        </div>
+
+                    <img class="hero__image" src="../MapStars/assets/Banner_pic.png"  alt="Picture of banner" />
+                </div>
+                <a href="#" class="hero__scroll-link">
+                    <img src="../MapStars/assets/Scroll-down.png" alt="" class="hero__scroll-down">
                 </a>
-            </div>
-
-            <img scr="./assets/Group 1247.png"  alt="Picture of banner" />
-        </section>
-        <section class="section section__tech">
-            <div class="tech__img-block"></div>
-            <div class="tech__content">
-                <h2 class="tech__title">Technology</h2>
-                <p class="tech__discription">
-                    <span class="tech__discription-bolt">GEO advertising is a technology for the automatic promotion of a business using modern technologies and services.
-                        The technology is specially made to promote almost all types of businesses. Cafes, restaurants, beauty salons and hairdressers, hotels and hostels,
-                        service stations and tire shops, repair service centers, online stores, grocery stores, supermarkets, photo studios, publishing houses, confectioneries, and many others have already used the technology.</span>
-                </p>
-            </div>
+            </div>            
         </section>
 
-        <section class="section section__advantages">
+        <section id="tech" class="section section__tech">
+            <div class="container">
+                <div class="tech__img-block"></div>
+                <div class="tech__content">
+                    <h2 class="tech__title">Technology</h2>
+                    <p class="tech__discription">
+                        <span class="tech__discription-bolt">GEO advertising is a technology for the automatic promotion of a business using modern technologies and services.
+                            The technology is specially made to promote almost all types of businesses. Cafes, restaurants, beauty salons and hairdressers, hotels and hostels,
+                            service stations and tire shops, repair service centers, online stores, grocery stores, supermarkets, photo studios, publishing houses, confectioneries, and many others have already used the technology.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="advantage" class="section section__advantages">
             <div class="advantages__content">
                 <h2 class="advantages__title">Advantages</h2>
                 <ul class="advantages__item">
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.0005 32.25C31.6573 32.25 33.0005 30.9069 33.0005 29.25C33.0005 27.5931 31.6573 26.25 30.0005 26.25C28.3436 26.25 27.0005 27.5931 27.0005 29.25C27.0005 30.9069 28.3436 32.25 30.0005 32.25Z" fill="#F33F5E"/>
+                                <path d="M24.8248 9.07545C23.4248 8.47545 21.9749 8.22545 20.7249 8.75045C16.7249 10.4505 17.2499 19.0755 17.2749 19.5505C17.3249 20.1005 17.3748 20.5505 17.4248 20.8505C17.8248 24.4255 18.7999 29.3755 21.2749 34.6505C23.7749 40.0005 26.8998 43.7255 28.3498 45.4505C28.7748 45.9505 28.9748 46.1755 29.0248 46.2505C30.9498 48.3255 36.0498 52.8005 39.4498 51.2505C43.1998 49.5505 42.7748 41.5755 42.7248 40.7755C42.6998 40.3755 42.6748 39.9755 42.5498 39.2255C42.2998 37.5005 41.9249 34.9005 41.0249 31.7505" stroke="url(#paint0_linear_31_303)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M48.8252 36.8747C51.0002 35.7247 52.9502 34.1497 53.1252 32.1497C53.4752 28.0497 46.3001 24.5247 45.6001 24.1747C45.2501 23.9997 44.8752 23.8497 44.1502 23.5747C41.6752 22.6247 37.3002 20.9247 31.2752 20.2997C25.5752 19.6997 20.7251 20.2997 17.2501 20.9997C16.8501 21.0747 16.2751 21.1747 15.6001 21.3497C14.7501 21.5747 7.32518 23.6747 6.90018 27.7247C6.70018 29.4747 7.87513 31.1497 9.35013 32.5247" stroke="url(#paint1_linear_31_303)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M44.0754 16.2507C44.0004 13.6007 43.4004 10.8507 41.5004 9.80071C37.9254 7.80071 31.7254 12.8757 31.1254 13.3757C30.8254 13.6257 30.5253 13.9007 29.9753 14.4507C28.0753 16.3007 24.7503 19.6007 21.7003 24.8257C18.8003 29.7757 17.3504 34.4507 16.5754 37.9007C16.4754 38.3007 16.3253 38.8757 16.2253 39.5507C16.0753 40.4257 14.9504 48.0257 18.4504 50.1007C19.5504 50.7507 20.9004 50.7257 22.2754 50.3757" stroke="url(#paint2_linear_31_303)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_31_303" x1="17.2393" y1="8.46436" x2="48.3928" y2="13.0123" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_31_303" x1="6.87793" y1="20.0536" x2="46.3824" y2="46.8379" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_31_303" x1="15.9351" y1="9.33618" x2="50.0496" y2="15.0692" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                        </span>
                         <h3 class="advantages__title">Modern technologies</h3>
                         <p class="advantages__discription">Thanks to modern technologies, our company has developed a simple and effective technology for promoting and developing your business. GEO advertising imitates word of mouth, allowing you to use the client not only for profit but also to attract new customers.</p>
                     </li>
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9748 23.9503L23.7998 36.1253" stroke="#F33F5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.2989 19.1504C20.5489 19.1504 19.1489 20.5754 19.1489 22.3004C19.1489 24.0504 20.5739 25.4504 22.2989 25.4504C24.0239 25.4504 25.4489 24.0254 25.4489 22.3004C25.4739 20.5754 24.0489 19.1504 22.2989 19.1504Z" fill="#F33F5E"/>
+                                <path d="M37.6988 34.5262C35.9488 34.5262 34.5488 35.9512 34.5488 37.6762C34.5488 39.4262 35.9738 40.8262 37.6988 40.8262C39.4238 40.8262 40.8488 39.4012 40.8488 37.6762C40.8488 35.9512 39.4488 34.5262 37.6988 34.5262Z" fill="#F33F5E"/>
+                                <path d="M51.1 39.4999H51.075C52.375 36.5999 53.125 33.3749 53.125 29.9999C53.125 17.2249 42.775 6.87488 30 6.87488C17.225 6.87488 6.875 17.2249 6.875 29.9999C6.875 42.7749 17.225 53.1249 30 53.1249C33.775 53.1249 37.35 52.1999 40.5 50.5999L53 52.4499L51.1 39.4999Z" stroke="url(#paint0_linear_31_334)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_31_334" x1="6.875" y1="6.87488" x2="61.224" y2="20.2741" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </span>
                         <h3 class="advantages__title">Affordable price</h3>
                         <p class="advantages__discription">Pay once - get the result constantly. Our pricing policy is very flexible, transparent, and affordable. Moreover, it is equally accessible to both small and medium-sized and large businesses.</p>
                     </li>
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.9502 43.6253C40.0984 43.6253 48.3251 35.3985 48.3251 25.2503C48.3251 15.102 40.0984 6.87524 29.9502 6.87524C19.802 6.87524 11.5752 15.102 11.5752 25.2503C11.5752 35.3985 19.802 43.6253 29.9502 43.6253Z" stroke="url(#paint0_linear_32_450)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15 36.2502L8.75 46.9252L16.125 46.5252L19.475 53.1002L25 43.7502C20.825 42.6752 17.475 39.6502 15 36.2502Z" stroke="url(#paint1_linear_32_450)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M45 36.2504C42.55 39.6754 39.175 42.6504 35 43.7504L40.525 53.1254L43.875 46.5504L51.25 46.9504L45 36.2504Z" stroke="url(#paint2_linear_32_450)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M40.4502 22.9263C40.9252 22.4763 40.6502 21.6513 40.0002 21.5763L33.9752 20.7013C33.7252 20.6513 33.5002 20.5013 33.3752 20.2513L30.6752 14.7763C30.3752 14.1763 29.5252 14.1763 29.2502 14.7763L26.5502 20.2513C26.4252 20.4763 26.2002 20.6513 25.9502 20.7013L19.9252 21.5763C19.2752 21.6763 19.0252 22.4763 19.4752 22.9263L23.8502 27.1763C24.0502 27.3763 24.1252 27.6263 24.0752 27.8763L23.0502 33.8763C22.9252 34.5263 23.6252 35.0263 24.2002 34.7013L29.6002 31.8763C29.8252 31.7513 30.1252 31.7513 30.3502 31.8763L35.7501 34.7013C36.3251 35.0013 37.0252 34.5013 36.9002 33.8763L35.8752 27.8763C35.8252 27.6263 35.9252 27.3513 36.1002 27.1763L40.4502 22.9263Z" stroke="#F33F5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_32_450" x1="11.5752" y1="6.87524" x2="54.7606" y2="17.5221" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_32_450" x1="8.75" y1="36.2502" x2="27.9224" y2="40.8087" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_32_450" x1="35" y1="36.2504" x2="54.1755" y2="40.8028" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                        </span>
                         <h3 class="advantages__title">Ease of implementation
                         </h3>
                         <p class="advantages__discription">Just a few simple implementation steps and GEO advertising starts working for your business. After the introduction of technology, the main condition for successful work is the fulfillment of three elementary tasks by the staff.
                         </p>
                     </li>
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0244 6.875H47.9744" stroke="url(#paint0_linear_31_346)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.0244 53.1249H47.9744" stroke="url(#paint1_linear_31_346)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M41.3489 18.65L33.6489 26.35C31.6489 28.35 28.3988 28.35 26.3738 26.35L18.6738 18.65C17.6988 17.675 17.1738 16.375 17.1738 15.025V12.025C17.1738 9.17499 19.4738 6.875 22.3238 6.875H37.7489C40.5989 6.875 42.8988 9.17499 42.8988 12.025V15.025C42.8488 16.375 42.2989 17.7 41.3489 18.65Z" stroke="url(#paint2_linear_31_346)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M42.8494 47.9761C42.8494 50.8261 40.5494 53.1261 37.6994 53.1261H22.2994C19.4494 53.1261 17.1494 50.8261 17.1494 47.9761H42.8494Z" fill="#F33F5E" stroke="#F33F5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M42.8494 44.974V47.974H17.1494V44.974C17.1494 43.624 17.6994 42.299 18.6494 41.349L26.3744 33.624C28.3744 31.624 31.6244 31.624 33.6244 33.624L41.3494 41.349C42.2994 42.299 42.8494 43.624 42.8494 44.974Z" stroke="url(#paint3_linear_31_346)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.8496 24.851H35.1496" stroke="url(#paint4_linear_31_346)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M29.9995 42.1509C29.4995 42.1509 29.0245 41.9508 28.6745 41.6008C28.3245 41.2508 28.1245 40.7759 28.1245 40.2759C28.1245 40.0259 28.1745 39.8009 28.2745 39.5509C28.3745 39.3259 28.4995 39.1259 28.6745 38.9509C29.1745 38.4259 30.0245 38.2758 30.7245 38.5508C30.9495 38.6508 31.1495 38.7759 31.3245 38.9509C31.4995 39.1259 31.6245 39.3259 31.7245 39.5509C31.8245 39.8009 31.8745 40.0259 31.8745 40.2759C31.8745 40.7759 31.6745 41.2508 31.3245 41.6008C30.9745 41.9508 30.4995 42.1509 29.9995 42.1509Z" fill="#F33F5E"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_31_346" x1="12.0244" y1="6.875" x2="12.5877" y2="11.8676" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_31_346" x1="12.0244" y1="53.1249" x2="12.5877" y2="58.1175" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_31_346" x1="17.1738" y1="6.875" x2="46.5548" y2="15.759" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_31_346" x1="17.1494" y1="32.124" x2="44.7715" y2="43.166" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint4_linear_31_346" x1="24.8496" y1="24.851" x2="26.5734" y2="29.2283" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
                         <h3 class="advantages__title">An experience</h3>
                         <p class="advantages__discription">During almost 5 years of individual work and experiments, our company has solved many puzzles and problems, and also found a lot of pitfalls in working with Internet services. We bring this experience to you
                         </p>
                     </li>
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M48.0502 23.05L44.7252 25.0251L31.5252 32.8502C30.5252 33.4002 29.2752 33.4002 28.3002 32.8502L15.1002 25.0251L11.7752 23.05C9.5502 21.75 9.5502 18.4002 11.7752 17.1002L28.3252 7.27505C29.3252 6.72505 30.5752 6.72505 31.5502 7.27505L48.1002 17.1002C50.2752 18.4002 50.2752 21.775 48.0502 23.05Z" stroke="url(#paint0_linear_32_444)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M49.5752 28.9744C50.0002 30.4244 49.5002 32.1243 48.0502 32.9743L31.5002 42.7993C30.5002 43.3493 29.2502 43.3493 28.2752 42.7993L11.7252 32.9743C10.3752 32.1743 9.85018 30.6243 10.1502 29.2243" stroke="#F33F5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M49.625 39.0499C49.975 40.4749 49.45 42.0749 48.075 42.8999L31.525 52.725C30.525 53.275 29.275 53.275 28.3 52.725L11.75 42.8999C10.475 42.1499 9.92502 40.725 10.125 39.4" stroke="url(#paint1_linear_32_444)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_32_444" x1="10.1064" y1="6.86255" x2="53.5464" y2="22.9346" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_32_444" x1="10.085" y1="39.0499" x2="43.4454" y2="62.1958" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                                </svg>
+                        </span>
                         <h3 class="advantages__title">Automation
                         </h3>
                         <p class="advantages__discription">Manage. Plan. Develop. The main principle of GEO advertising from Mappers is automation. This is the basis of technology. To automate the process of promotion and promotion of the business, to allow applying a minimum of effort and get a good result.
                         </p>
                     </li>
                     <li class="advantages__list">
-                        <span class="advantages__icon"></span>
+                        <span class="advantages__icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M41.3738 22.3996C40.3238 22.3996 39.5988 22.3996 39.5988 22.3996C41.0488 17.9496 42.6488 10.7745 37.6738 7.92446C36.3238 7.14946 32.2738 5.92445 31.6988 8.22445C30.8988 11.3745 30.1238 14.5245 28.2488 17.2995C26.6988 19.5745 24.3488 22.0996 21.4238 22.3996C21.4238 22.5246 21.4238 22.6745 21.4238 22.6745V45.7995C21.4238 45.7995 21.4238 46.4245 21.4238 47.0495C21.7238 47.1495 22.0238 47.2496 22.0238 47.2496L27.2738 48.9746C28.9988 49.5496 30.7988 49.8495 32.6238 49.8495H45.4488C47.9988 49.8495 50.0738 47.7995 50.0738 45.2745C50.0738 44.6745 49.9488 44.1245 49.7238 43.5995C51.6988 43.0495 53.1238 41.2745 53.1238 39.1745C53.1238 37.9995 52.6988 36.9245 51.9488 36.0995C52.6738 35.2995 53.1238 34.2245 53.1238 33.0745C53.1238 31.8995 52.6988 30.8245 51.9488 29.9995C52.6738 29.1995 53.1238 28.1245 53.1238 26.9745C53.1238 24.4495 51.0488 22.3996 48.5238 22.3996C48.5238 22.3996 43.9738 22.3996 41.3738 22.3996Z" stroke="url(#paint0_linear_32_435)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.87402 18.4495H15.599C18.799 18.4495 21.399 21.0495 21.399 24.2495V47.3495C21.399 50.5495 18.799 53.1495 15.599 53.1495H6.87402V18.4495Z" stroke="url(#paint1_linear_32_435)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.1492 46.8491C15.2262 46.8491 16.0992 45.9761 16.0992 44.8992C16.0992 43.8222 15.2262 42.9491 14.1492 42.9491C13.0723 42.9491 12.1992 43.8222 12.1992 44.8992C12.1992 45.9761 13.0723 46.8491 14.1492 46.8491Z" fill="#F33F5E"/>
+                                <defs>
+                                <linearGradient id="paint0_linear_32_435" x1="21.4238" y1="6.89673" x2="59.6729" y2="13.8562" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_32_435" x1="6.87402" y1="18.4495" x2="24.7892" y2="20.2983" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#F33F5E"/>
+                                <stop offset="1" stop-color="#FA8550"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>                                
+                        </span>
                         <h3 class="advantages__title">Efficiency</h3>
                         <p class="advantages__discription">Our technology has passed the stages of experimentation, testing, and implementation at more than 100 facilities in Ukraine and abroad. We have shared the results of our work on our website. Cafes, restaurants, hotels, and many other types of businesses are already using GEO advertising technology every day.</p>
                     </li>
                 </ul>
             </div>
         </section>
+
+        <section id="how-work" class="section section__how-work">
+            <div class="container">
+                <div class="how-work__registration-block">
+                    <h2 class="how-work__title">How does it work?</h2>
+                    <p class="how-work__discription">Three easy steps to implement GEO technology </p>
+                    <div class="how-work__content">
+                        <div class="how-work__image-block"></div>
+                        <div class="how-work__text-block">
+                            <span class="how-work__step-number">01</span>
+                            <h3 class="how-work__step-title">Registration</h3>
+                            <p class="how-work__step-text">
+                                At the first stage, our specialists register your business in the Google My Business global business directory, as well as in some other services. We will collect and publish: basic information about your business (description, exact address, photos, phone numbers, work schedule), and optimize and customize the profile of the institution.
+                                Our company will be glad to offer you a standard photo session of your business. As well as a modern 360° panoramic photo session.
+                                If your company does not have a website, we will set up a free business page for you from Google or a more advanced version from Stars Maps.
+                                Google search provides the user with information about nearby, popular, and accessible places. After registration, potential visitors can easily find information about your business using Google Search, and Google Maps. By registering, you will increase the number of new customers and calls for your business.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="how-work__technology-block">
+                    <div class="how-work__image-block"></div>
+                    <div class="how-work__text-block">
+                        <span class="how-work__step-number">02</span>
+                        <h3 class="how-work__step-title">The technology of Motivation and Social Recommendations</h3>
+                        <p class="how-work__step-text">
+                            Motivation technology is a proprietary development of our company. It is designed to increase the number of reviews and recommendations about your business at the expense of old customers, which directly affects the number of new customers.
+                            To implement the technology, we use carriers - motivators. They come in various formats: a tabletop, a signboard, a banner, a business card, a sticker, a product packaging element, a leaflet, and so on. Our task is to integrate the use of the motivator into your business process.
+                            With your help or on your own, the client, using a mobile device, read the QR code from the motivator and goes to a special website of the institution's complaint. On this page, he will be able to share social recommendations and leave feedback about visiting your establishment, thus promoting you on the network. Advertising messages about your establishment will be distributed on social networks (Facebook, Instagram) or in the form of messages via instant messengers (Viber, WhatsApp, Telegram).
+                            The introduction of technology significantly increases the number of reviews left on Google Maps, which subsequently increases the popularity and frequency of issuance in Google services. Each client turns into a tool to attract new visitors, our technology is a modern version of word of mouth for your business.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="how-work__stastistic-block">
+                    <div class="how-work__image-block"></div>
+                    <div class="how-work__text-block">
+                        <span class="how-work__step-number">02</span>
+                        <h3 class="how-work__step-title">The technology of Motivation and Social Recommendations</h3>
+                        <p class="how-work__step-text">
+                            Thanks to modern technologies, information is easily recorded and collected for further analysis. In your Google My Business personal account of your institution, you can see complete statistics about views, the number of calls, and routes laid. At your request, we can provide additional reports and recommendations, following which you can more effectively and quickly promote your services and products on the market. Our clients can always contact us for advice.
+                            Like you, our company is constantly growing and developing. Very soon we plan to bring to the market new proposals for advertising and development. Now we are working on a system for measuring customer loyalty and a video presentation of the institution.
+                            Our research department is constantly working on testing promotional elements of Google, Facebook, Instagram, and other platforms. Staying in touch with us, you will always learn about the latest in the world of advertising. The success of your business is in our interest. Stars Maps is a new generation advertising agency and technology!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="section__services">
+            <img src="./assets/sevices.png" alt="services image" class="services___bg-image"/>
+        </section>
+
+        <section class="section section__useful">   
+            <div class="container">
+                <div class="useful__google-work">
+                    <div class="useful__google-work-content">
+                        <h2 class="useful__title">How does Google Search work?</h2>
+                        <p class="useful__discription">
+                            Today, the largest search resource on the planet is Google Search. It is practically a monopoly in the field of information search. That is why our company, when creating its GEO advertising technology, used this system as a basis.
+                            Let's figure out together how exactly Google Search works.
+                            When a user enters a search query, Google Search processes it in less than one second and returns the search results in a specific sequence.
+                            Android phones, 75% of phones based on other systems, as well as laptops and home computers use Google in one or another way.
+                        </p>
+                    </div>  
+    
+                    <img src="./assets/google-work.jpg" alt="search image" class="useful__image"/>              
+               </div>
+               <div class="useful__advertisement">
+                    <h2 class="useful__title">First block:<br> Advertisements</h2>
+                    <p class="useful__discription">Search results tagged "advertising". Such ads are always displayed at the top of the list (from 1 to 4 ads) and at the bottom of the list (from 1 to 5 ads). The place in the list is determined by the Google Adwords auction.
+                        Google Adwords guarantees your ad or website visits but requires constant financial investment. For example, the cost of such advertising per month for clothing stores in Lisbon will be about 5000 €. and more. Agree, not every small or medium business can afford such an advertising budget. However, our clients often use Adwords in tandem with GEO advertising.                                
+                    </p>
+               </div>
+            </div>
+           
+        </section>
+        
+        <section class="section section__social">
+            <div class="container">
+                <img src="./assets/social-photo.jpg" alt="Social Advertisement  " class="social__image">
+
+                <div class="social__content">
+                    <h2 class="social__title">Social networks with GEO advertising technology</h2>
+                    <p class="social__discription">Any business seeks to make a profit through customer satisfaction. But satisfying such needs, no business seeks to use the client to promote their product or service. This happens on its own, in the form of "word of mouth", as it is popularly called. Modern business keeps in touch with the client using mobile applications such as Instagram, Telegram or Twitter, instant messengers (Viber, Skype, WhatsApp), or social networks (Facebook, etc.).
+                        What if we offer you a simple technique that will allow you to bring more new customers at the expense of old ones, using social networks and mobile applications? Moreover, not on the scale of a simple word of mouth, but a modern one, using the above social networks and mobile applications?
+                        With a few simple implementation steps, and simple instructions for use and your clients will work for you.
+                        Geo advertising from Stars Maps is the word of mouth of our time.
+                        GEO technology - word of mouth of the modern digital market!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="package" class="section section__packages">            
+            <div class="container">           <h2 class="services__title">Packages services</h2>  
+
+                <ul class="services__carts">
+                    <li class="services__cart">
+                        <div class="services_heading">
+                            <h3 class="services__head">My business</h3>
+                            <p class="services__discription">Suitable for new or small business</p>
+                        </div>
+                        <div class="services__list">
+                            <h4 class="services__list-head">The package includes:</h4>
+                            <ul>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Registering your business on a Google map
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Setting up Google My Business
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Standard photo shoot by Google Trusted Photographer
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Recommendations for promotion on the Google Map
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Google website
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn services__get-btn">
+                            Get started
+                        </a>
+                    </li>
+                    <li class="services__cart">
+                        <div class="services_heading">
+                            <h3 class="services__head">Advanced</h3>
+                            <p class="services__discription">Promotion with help of the unique technology of motivation</p>
+                        </div>
+                        <div class="services__list">
+                            <h4 class="services__list-head">The package includes:</h4>
+                            <ul>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Registering your business on a Google map
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Setting up Google My Business
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Keyword Optimization
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Extended Photoshoot by Google Certified Photographer
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    The technology of motivation and social recommendations
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    30 days of free consultation and email support
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Google website
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn services__get-btn">
+                            Get started
+                        </a>
+                    </li>
+                    <li class="services__cart">
+                        <div class="services_heading">
+                            <h3 class="services__head">GEO advertising</h3>
+                            <p class="services__discription">Efficient GEO ads</p>
+                        </div>
+                        <div class="services__list">
+                            <h4 class="services__list-head">The package includes:</h4>
+                            <ul>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Registering your business on a Google map
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Setting up Google My Business
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Keyword Optimization
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Extended Photoshoot by Google Certified Photographer
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Standard panoramic photo session
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    The technology of motivation and social recommendations
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    70 days of free consultation and email support
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Website development
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn services__get-btn">
+                            Get started
+                        </a>
+                    </li>
+                    <li class="services__cart">
+                        <div class="services_heading">
+                            <h3 class="services__head">Maximum</h3>
+                            <p class="services__discription">Efficient GEO ads</p>
+                        </div>
+                        <div class="services__list">
+                            <h4 class="services__list-head">The package includes:</h4>
+                            <ul>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Registering your business on a Google map
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Keyword Optimization
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Extended Photoshoot by Google Certified Photographer
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Standard panoramic photo session
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Google My Business training course for employees
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    The technology of motivation and social recommendations
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Google My Business training course for employees
+                                </li>
+    
+                                <li class="services__list-item">
+                                    <span></span>
+                                    90 days of your Google Maps point service
+                                </li>
+                                <li class="services__list-item">
+                                    <span></span>
+                                    Website development
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn services__get-btn">
+                            Get started
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+        </section>
+
+        <section class="section section__examples">
+            <div class="container">
+                <h2 class="examples__titles">Implementation examples</h2>
+                <div class="examples__content">
+                    <ul class="examples__block-image">
+                        <li class="examples__list">
+                            <span class="examples__text">Increase in the flow of customers</span>
+                            <span class="examples__prosent">+40%</span>
+                        </li>
+                        <li class="examples__list">
+                            <img src="./assets/examp-car1.jpg" alt="" class="examples__image">
+                        </li>
+                        <li class="examples__list">
+                            <img src="./assets/examp-car2.jpg" alt="" class="examples__image">
+                        </li>
+                        <li class="examples__list">
+                            <span class="examples__text">Increase in the flow of customers</span>
+                            <span class="examples__prosent">+40%</span>
+                        </li>
+                    </ul>
+                    <h3 class="slide__title">Car wash Ceramic Pro Latvia</h3>
+                    <ul class="examples__slider">
+                        <li class="slide">
+                            <p class="slide__text">
+                                Ceramic Pro is the first client of the company in Latvia, as well as the first client abroad.
+                                After changing the car wash system and approach to working with the client, under the new Ceramic Pro brand, the task was to bring more customers in the 16/17 tourist season than in the 15/16 season.
+                                The main focus of the photo session/photo presentation was to be the Ceramic Pro logo and new corporate identity, as well as the workflow and higher level of the average customer. This project has become a pilot project for our company in terms of introducing a unique Motivator design with the logo of the client's company. The task was also to orient the issue in Google search for a Russian-speaking tourist/client.
+                                The result was not long in coming, already in the next 16/17 season in Jurmala, 17% more customers turned to the car wash than in the 15/16 season. According to our forecasts, they should grow up to 25% over the next
+                            </p>            
+                        </li>
+                        <li class="slide">
+                            <p class="slide__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora eligendi temporibus unde nesciunt porro earum nam quod iusto id, cum mollitia enim distinctio cupiditate, vero iure adipisci aut nulla.
+                                Numquam perspiciatis aspernatur, assumenda veritatis, alias odio rerum voluptatibus voluptates cupiditate, exercitationem fuga! Aperiam quas sit doloremque sunt, perspiciatis corporis aut alias maiores necessitatibus obcaecati, corrupti natus, nobis impedit incidunt!
+                                Beatae, aliquam voluptatem adipisci necessitatibus nam laboriosam ea iste voluptates suscipit laudantium animi harum illo nemo ipsum delectus laborum ex sequi saepe perspiciatis quibusdam tenetur. Cum at adipisci distinctio ullam?
+                                Nam omnis autem pariatur sunt placeat odio aliquam quasi maiores, corporis dolor? Eaque vel consequuntur tempore eligendi ducimus sequi explicabo, alias molestiae velit unde sunt quia libero. Beatae, eum minima!
+                            </p>
+                        </li>
+                        <li class="slide">
+                            <p class="slide__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora eligendi temporibus unde nesciunt porro earum nam quod iusto id, cum mollitia enim distinctio cupiditate, vero iure adipisci aut nulla.
+                                Numquam perspiciatis aspernatur, assumenda veritatis, alias odio rerum voluptatibus voluptates cupiditate, exercitationem fuga! Aperiam quas sit doloremque sunt, perspiciatis corporis aut alias maiores necessitatibus obcaecati, corrupti natus, nobis impedit incidunt!
+                                Beatae, aliquam voluptatem adipisci necessitatibus nam laboriosam ea iste voluptates suscipit laudantium animi harum illo nemo ipsum delectus laborum ex sequi saepe perspiciatis quibusdam tenetur. Cum at adipisci distinctio ullam?
+                                Nam omnis autem pariatur sunt placeat odio aliquam quasi maiores, corporis dolor? Eaque vel consequuntur tempore eligendi ducimus sequi explicabo, alias molestiae velit unde sunt quia libero. Beatae, eum minima!
+                            </p>
+                        </li>
+                        <li class="slide">
+                            <p class="slide__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora eligendi temporibus unde nesciunt porro earum nam quod iusto id, cum mollitia enim distinctio cupiditate, vero iure adipisci aut nulla.
+                                Numquam perspiciatis aspernatur, assumenda veritatis, alias odio rerum voluptatibus voluptates cupiditate, exercitationem fuga! Aperiam quas sit doloremque sunt, perspiciatis corporis aut alias maiores necessitatibus obcaecati, corrupti natus, nobis impedit incidunt!
+                                Beatae, aliquam voluptatem adipisci necessitatibus nam laboriosam ea iste voluptates suscipit laudantium animi harum illo nemo ipsum delectus laborum ex sequi saepe perspiciatis quibusdam tenetur. Cum at adipisci distinctio ullam?
+                                Nam omnis autem pariatur sunt placeat odio aliquam quasi maiores, corporis dolor? Eaque vel consequuntur tempore eligendi ducimus sequi explicabo, alias molestiae velit unde sunt quia libero. Beatae, eum minima!
+                            </p>
+                        </li>
+
+                    </ul>
+                </div>                
+            </div>
+        </section>
+
+        <section class="section section__awards">
+            <div class="container">
+                <h2 class="awards__titles">Implementation examples</h2>
+                <p class="awards__disription">Our company has a number of cities in the service of Google and Booking</p>
+                <ul class="awards__item">
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/google-street.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/booking.jpg" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/local-guides.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/product-expert.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/trusted-verifier.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/street-view.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/google-partner.png" alt="" class="awards__image"></a></li>
+                    <li class="awards__list"><a href="#" class="awards__link"><img src="./assets/tripadvisor.png" alt="" class="awards__image"></a></li>
+                </ul>
+
+            </div>
+        </section>
+
+
+        <section class="section section__setting-up">
+            <div class="container">
+                <h2 class="awards__title">Implementation examples</h2>
+                <div id="tabs">
+                    <div class="tab whiteborder">Tab 1</div>
+                    <div class="tab">Tab 2</div>
+                    <div class="tab">Tab 3</div>
+                    <div class="tabContent">1</div>
+                    <div class="tabContent">2</div>
+                    <div class="tabContent">3</div>
+                </div>
+                <div class="awards__image">
+                    <img src="./assets/" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="get-touch" class="section section__get-touch">
+            <div class="container">
+                <div class="get-touch__content">
+                    <p class="get-touch__slogan">Ready for take-off?</p>
+                    <h2 class="get-touch__titles">Get in touch</h2>
+                    <ul class="get-touch__item">
+                        <li class="get-touch__list"><a href="#" class="get-touch__link">+351 913 448 547</a></li>
+                        <li class="get-touch__list"><a href="#" class="get-touch__link">mapstars</a></li>
+                        <li class="get-touch__list"><a href="#" class="get-touch__link">info@mapstars.pt</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="btn hero__get-btn">
+                    Get started
+                    <span class="hero__btn-vector"></span>
+                </a>
+
+            </div>
+        </section>
     </main>
-    <footer></footer>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <img class="footer__logo" src="./assets/MapStars-logo.png" alt="Logotype"/>
+            <nav>
+                <ul class="footer__navbar-item">
+                    <li class="footer__navbar-list"><a href="#" class="footer__navbar-link">Privacy Policy</a></li>
+                    <li class="footer__navbar-list"><a href="#" class="footer__navbar-link">Terms of Service</a></li>
+                    <li class="footer__navbar-list"><a href="#" class="footer__navbar-link">Schedule a Call</a></li>
+                   
+                </ul>
+            </nav>
+
+            <ul class="footer__icon-block">
+               <li class="footer__icon-list"><a href="#" class="footer__icon-link"></a></li>
+               <li class="footer__icon-list"><a href="#" class="footer__icon-link"></a></li>
+               <li class="footer__icon-list"><a href="#" class="footer__icon-link"></a></li>
+               <li class="footer__icon-list"><a href="#" class="footer__icon-link"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="overlay"></div>
+
+   <!-- Несколько модальных окон -->
+
+   <div class="modal modal__menu" data-modal="1">
+    <svg class="modal__close-btn" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <nav>
+        <ul class=" modal__navbar">
+            <li class="modal__navbar-list"><a href="#tech" class="header__navbar-link modal__navbar-link">Technology</a></li>
+            <li class="modal__navbar-list"><a href="#advantage" class="header__navbar-link modal__navbar-link">Advantages</a></li>
+            <li class="modal__navbar-list"><a href="#how-work" class="header__navbar-link modal__navbar-link">How it works</a></li>
+            <li class="modal__navbar-list"><a href="#package" class="header__navbar-link modal__navbar-link">Packages</a></li>
+            <li class="modal__navbar-list"><a href="#get-touch" class="header__navbar-link modal__navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+ </div>
+
+ <div class="modal modal__form" data-modal="2">
+    <svg class="modal__close-btn" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <div class="modal__content">
+        <h4 class="modal__title">Contact Form</h4>
+        <p class="modal__slogan">Drop Us a Line.</p>
+        <form for="contact"  method="post" class="contact-form">
+            <input type="text" class="contact-form__input input__name" placeholder="First Name*">
+            <input type="email" name="mail" class="contact-form__input input__mail" placeholder="E-mail*">
+            <textarea id="contact" name="message"  class="contact-form__input input__textarea" rows="5" cols="20" placeholder="Send a Message"></textarea>
+            <button class=" btn contact-form__btn type="submit" >Send a Message</button>
+        </form>
+    </div>
+ </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="../MapStars/js/app.js"></script>
+    <script src="../MapStars/js/modal.js"></script>
+
+
+    <script >
+        $(window).ready(function(){
+                $('.examples__slider').slick({
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                speed: 1000,
+                easing: "ease"
+                });
+        }); 
+    </script>
 </body>
 </html>
